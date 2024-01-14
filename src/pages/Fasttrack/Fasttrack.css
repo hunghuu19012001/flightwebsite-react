@@ -1,0 +1,16 @@
+/* .dark\:bg-slate-800{
+    background-color: white;
+} */
+
+.text-gray-400{
+    color: white!important;
+}
+span{
+    font-weight: bold;
+}
+
+.selected-button{
+    color: #EF3925;
+    border-color: #EF3925;
+    background-color: #F1E1DF;
+}

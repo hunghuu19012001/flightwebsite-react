@@ -1,0 +1,20 @@
+
+.selected{
+    background: rgba(67, 97, 238, 0.30);
+    /* border-radius: 30px;
+    height: 37px;
+    width: 80px; */
+  }
+  /* Thêm class `.selected` khi một mục được chọn */
+/* .selected-item {
+  background: rgba(67, 97, 238, 0.30);
+  border-radius: 30px;
+  height: 37px;
+  width: 80px;
+} */
+
+#fasttrack, #home, #legalservices, #visa, #cruise, #travelinsurance, #contactus{
+  /* padding: 6px;
+  border-radius: 16px; */
+  color:#154475;
+}
