@@ -35,12 +35,12 @@ const Contact = () => {
           <label htmlFor="message" className="block text-sm font-medium text-gray-700">
             Your Message
           </label>
-          <textarea
+          {/* <textarea
             id="message"
             name="message"
             rows="4"
             className="mt-1 p-2 w-full border border-gray-300 rounded-md"
-          ></textarea>
+          ></textarea> */}
         </div>
         <button
           type="button"
