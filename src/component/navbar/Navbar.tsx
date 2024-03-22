@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 import { BiMenu, BiX } from 'react-icons/bi';
+import logo from "../../assets/images/logo.png"
 
 function Navbar() {
   const [isNavMenuMobileOpen, setIsNavMenuMobileOpen]= useState(false)
@@ -28,7 +29,7 @@ function Navbar() {
           <div className="flex md:flex md:justify-between items-center md:mx-10 md:mr-28 ">
               <div className='flex-shrink-0 flex-initial w-80'>
                   <a href='/'>
-                      <img className="mx-auto" src="/src/assets/images/logo.png" alt="" />
+                      <img className="mx-auto" src={logo} alt="" />
                   </a>
               </div>
               <div>
