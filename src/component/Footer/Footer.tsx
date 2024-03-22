@@ -1,15 +1,15 @@
 
-import logo from "../../assets/images/logo.png"
+import logohieploi from "../../assets/images/logohieploi.png"
 
 import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
-    <div className="bg-blue-950 mt-10 ">
+    <div className="bg-blue-950 mt-10">
             
-            <div className='flex flex-col md:flex-row  text-white md:px-5 pt-5 justify-between md:px-20'>
+            <div className='flex flex-col md:flex-row  text-white md:px-5 pt-5 justify-between md:px-20 '>
                 <div className='ml-5'>
                     <a href='#'>
-                        <img src={logo} alt="" />
+                        <img src={logohieploi} alt="" />
                     </a>
                     <h5 className='hidden md:block'>Copyright © 2023</h5>
 

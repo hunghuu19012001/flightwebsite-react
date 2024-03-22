@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 import { BiMenu, BiX } from 'react-icons/bi';
-import logo from "../../assets/images/logo.png"
+import logohieploi from "../../assets/images/logohieploi.png"
 
 function Navbar() {
   const [isNavMenuMobileOpen, setIsNavMenuMobileOpen]= useState(false)
@@ -23,28 +23,29 @@ function Navbar() {
 },[]);
 
   return (
-    <div className={`md:fixed  top-0 w-full shadow-lg shadow-indigo-500/10 ${isCrolled ? "bg-white" : ""}`}>
+    // <div className={`md:fixed  top-0 w-full shadow-lg shadow-indigo-500/10 ${isCrolled ? "bg-white" : ""}`}>
+    <div className={`md:fixed  top-0 w-full shadow-lg shadow-indigo-500/10 bg-emerald-50	 ${isCrolled ? "bg-white" : ""}`}>
       {/* bg-blue-950 */}
       <div className=" p-4 md:px-4  w-full">
           <div className="flex md:flex md:justify-between items-center md:mx-10 md:mr-28 ">
               <div className='flex-shrink-0 flex-initial w-80'>
                   <a href='/'>
-                      <img className="mx-auto" src={logo} alt="" />
+                      <img className="mx-auto" src={logohieploi} alt="" />
                   </a>
               </div>
               <div>
                   <BiMenu className="text-white cursor-pointer md:hidden flex-none w-9 h-9 " onClick={toggleNavMenuMobile}></BiMenu>
 
               </div>
-              <div className={`text-white font-semibold flex items-center space-x-16 hidden md:block  bg-white p-3 rounded-3xl `}>
-                    <Link id="home" to="#" >Home</Link>
-                    <Link id="legalservices" to='#'>Legal Services</Link>
+              <div className={`text-white font-extrabold flex items-center space-x-16 hidden md:block  bg-white p-3 rounded-3xl text-lg`}>
+                    <Link id="home" to="#" >Giới thiệu</Link>
+                    <Link id="legalservices" to='#'>Xe máy</Link>
 
-                    <Link id="visa"  to="#">Visa</Link>
-                    <Link id="fasttrack" to="/fasttrack" >Fast Track</Link>
-                    <Link id="cruise" to="#" >Cruise</Link>
-                    <Link id="travelinsurance" to="#" >Travel Insurance</Link>
-                    <Link id="contactus" to="/contactus" >Contact Us</Link>
+                    <Link id="visa"  to="#">Xe điện</Link>
+                    <Link id="fasttrack" to="/fasttrack" >Lái xe an toàn</Link>
+                    {/* <Link id="cruise" to="#" >Cruise</Link> */}
+                    <Link id="travelinsurance" to="#" >Tin Tức</Link>
+                    <Link id="contactus" to="/contactus" >Liên hệ</Link>
 
               </div>  
           </div>   

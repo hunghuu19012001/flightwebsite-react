@@ -1,7 +1,7 @@
 
 const Searchbar = () => {
   return (
-    <div className='max-w-7xl'>
+    <div className='max-w-7xl h-96 '>
         <div>
             <p>Where are you flying?</p>
             <div>
